@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>[Thực hành] Xây dựng lớp mô phỏng sự hoạt động của đèn pin</title>
+</head>
+<body>
+	<div class="regBox">
+		<p>[Thực hành] Xây dựng lớp mô phỏng sự hoạt động của đèn pin</p>
+		<img id="light" src="off.jpg" width="150">
+		<div class="switch">
+			<label>
+				OFF
+				<input id="lightStatus" type="checkbox" name="lightStatus" />
+				<span class="lever"></span>
+				ON
+			</label>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="Light.js"></script>
+	<script type="text/javascript">
+		new Light('light', 'lightStatus', 'on.jpg', 'off.jpg');
+	</script>
+</body>
+</html>
